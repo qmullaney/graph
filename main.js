@@ -46,7 +46,9 @@ $(document).ready(function() {
     // p = $("<p></p>")
     // graph.append(p.append("hello inside p"))
     data.forEach( (peep) => {
-        d = $("<div class='row' ></div>").append(`${peep.name}`)
-        graph.append()
+        box = $("<div></div>")
+        box.css("color", "blue")
+        d = $("<div class='row' ></div>").append(peep.name).append(box)
+        graph.append(d)
     })
 });
